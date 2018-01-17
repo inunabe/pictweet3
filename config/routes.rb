@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :tweets #コントローラーごとに設定
   #     get 'tweets' => 'tweets#index'
   #     get 'tweets/new' => 'tweets#new'
-  #     post 'tweets/tweets/new' => 'tweets#create'
+  #     post 'tweets' => 'tweets#create'
+  get 'users/:id' => 'users#show'
 end
